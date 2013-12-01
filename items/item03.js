@@ -2,7 +2,6 @@
  * Created by azu on 2013/11/17.
  */
 
-var assert = require("assert");
 function point(x, y) {
     if (typeof x === "undefined") {
         x = 320;
@@ -16,10 +15,5 @@ function point(x, y) {
     };
 }
 
-describe("point", function () {
-    it("no parameter", function () {
-        var point2 = point();
-        assert.deepEqual(point2, { x: 320, y: 240});
-    });
-
-});
+var point2 = point();
+point2; // => '{ "x": 320, "y": 240 }'
