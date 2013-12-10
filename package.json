@@ -22,7 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
-    "power-doctest": "~0.1.1",
+    "power-doctest": "~0.2.1",
     "grunt-este-watch": "~0.1.13"
   }
 }

@@ -16,4 +16,8 @@ function point(x, y) {
 }
 
 var point2 = point();
-point2; // => '{ "x": 320, "y": 240 }'
+point2; // => { "x": 320, "y": 240 }
+
+
+var ary = [1,2,3];
+ary.join("-"); // => "1-2-3"

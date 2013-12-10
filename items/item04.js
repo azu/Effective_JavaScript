@@ -9,7 +9,7 @@ var s1 = new String("hello");
 var s2 = new String("hellow");
 s1 === s2; // => false
 
-"hello".toUpperCase(); // "HELLO"
+"hello".toUpperCase(); // > "HELLO"
 
 "hello".someProperty = 17;
 "hello".someProperty; // => undefined
