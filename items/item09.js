@@ -4,5 +4,6 @@ function swap(a, i, j) {
     a[j] = temp;
 }
 
-var res = swap(["a", "b"], 1, 2);
-res;// => ["b", "a"]
+var ary = ["a", "b"];
+swap(ary, 0, 1);
+ary;// => ["b", "a"]
