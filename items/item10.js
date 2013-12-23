@@ -23,7 +23,6 @@ function status(info) {
         return show();
     }
 }
-
 function f(x, y) {
     with (Math) {
         return min(round(x), sqrt(y));
@@ -32,3 +31,7 @@ function f(x, y) {
 status("connecting"); // => "Status: connecting"
 Widget.prototype.info = "[[Widget info]]";
 status("connected"); // => "Status: [[Widget info]]"
+
+var ary = [1,2];
+ary.pop(); // => 2
+ary.pop(); // => 1
