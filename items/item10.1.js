@@ -28,10 +28,11 @@ function f(x, y) {
         return min(round(x), sqrt(y));
     }
 }
+// P37
 status("connecting"); // => "Status: connecting"
 Widget.prototype.info = "[[Widget info]]";
 status("connected"); // => "Status: [[Widget info]]"
-
-var ary = [1,2];
-ary.pop(); // => 2
-ary.pop(); // => 1
+// P37
+Math.x = 0;
+Math.y = 0;
+f(2, 9); // => 0
