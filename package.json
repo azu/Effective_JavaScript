@@ -21,7 +21,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "power-doctest": "~0.2.1",
     "gulp": "~3.2.1",
     "gulp-power-doctest": "~0.1.0"
   }
