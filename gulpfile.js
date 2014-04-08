@@ -6,7 +6,5 @@ gulp.task('tests', function () {
 });
 
 gulp.task('default', function () {
-    gulp.watch('items/**/*.js', function (event) {
-        gulp.run('tests');
-    });
+    gulp.watch('items/**/*.js', ["tests"]);
 });
