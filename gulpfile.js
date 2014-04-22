@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 var powerDoctest = require("gulp-power-doctest");
 gulp.task('tests', function () {
     gulp.src("items/**/*.js")
@@ -6,5 +7,8 @@ gulp.task('tests', function () {
 });
 
 gulp.task('default', function () {
-    gulp.watch('items/**/*.js', ["tests"]);
+    gulp.src('items/**/*.js')
+        .pipe(watch(function (files) {
+            return files.pipe(powerDoctest());
+        }));
 });
